@@ -8,6 +8,14 @@ import { MenuComponent } from './menu/menu.component';
 import { SliderComponent } from './slider/slider.component';
 import { ProductsComponent } from './products/products.component';
 import { ProductComponent } from './product/product.component';
+import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { ProductAddComponent } from './product-add/product-add.component';
+import { FormsModule } from "@angular/forms";
+import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { ProductEditComponent } from './product-edit/product-edit.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +24,19 @@ import { ProductComponent } from './product/product.component';
     MenuComponent,
     SliderComponent,
     ProductsComponent,
-    ProductComponent
+    ProductComponent,
+    FooterComponent,
+    HomeComponent,
+    NotFoundComponent,
+    ProductAddComponent,
+    ProductDetailComponent,
+    ProductEditComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

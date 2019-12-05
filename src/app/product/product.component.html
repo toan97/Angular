@@ -1,13 +1,14 @@
 <div class="card">
-    <img [src]="product.image"
-        class="card-img-top" alt="...">
+    <img src="{{product.image}}" class="card-img-top" alt="...">
     <div class="card-body">
         <h5 class="card-title">{{product.name}}</h5>
     </div>
     <ul class="list-group list-group-flush">
-        <li class="list-group-item">{{product.price}}/{{product.type}}</li>
+        <li class="list-group-item">{{product.price}}</li>
     </ul>
     <div class="card-body bg-light text-danger">
         <a href="#" class="card-link">Mua ngay</a>
     </div>
+    <button class="btn btn-primary" [routerLink]="['/product/edit/',product.id]">Edit Product</button>
+    <button class="btn btn-danger" (click)="deleteProduct(product.id)">Delete Product</button>
 </div>

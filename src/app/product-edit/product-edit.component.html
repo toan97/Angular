@@ -1,0 +1,5 @@
+<h2>Sửa sản phẩm</h2>
+<form action="" method="POST" *ngIf="product">
+    <input type="text" [(ngModel)]="product.name" name="name">
+    <button (click)="updateProduct(product.id)">Gửi</button>
+</form>
